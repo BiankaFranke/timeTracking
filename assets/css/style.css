@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(226, 43%, 10%);
+}
+
+main {
+    margin-top: 100px;
+    margin: 100px 20px 0px 20px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+#userInformation {
+    margin-bottom: 20px;
+}
+
+#userPicture img {
+    max-height: 80px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+#userData {
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 10px;
+}
+
+#userName {
+    padding-left: 15px;
+}
+
+#userName p {
+    color: hsl(236, 100%, 87%);
+}
+
+#timeIntervall {
+    display: flex;
+    justify-content: space-around;
+    background-color: hsl(235, 46%, 20%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 30px 0px;
+}
+
+#timeIntervall button {
+    background-color: hsl(235, 46%, 20%);
+    border: none;
+    color: hsl(236, 100%, 87%);
+}
+
+#timeIntervall button:focus {
+    color: white;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.appointment {
+    margin-bottom: 20px;
+}
+
+.appointmentHeader, .data {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.data p, .data span {
+    color: hsl(236, 100%, 87%);
+}
+
+.appointmentData {
+    transform: translateY(-8px);
+}
+
+.appointmentHeader {
+    background-color: hsl(235, 46%, 20%);
+}
+
+.appointmentHeader img {
+    object-fit: contain;
+}
+
+.appointmentHead {
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.appointmentData {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+}
+
+#work {
+    background-color: hsl(15, 100%, 70%);
+    background-image: url(../img/icon-work.svg);
+}
+
+#play {
+    background-color: hsl(195, 74%, 62%);
+    background-image: url(../img/icon-play.svg);
+}
+
+#study {
+    background-color: hsl(348, 100%, 68%);
+    background-image: url(../img/icon-study.svg);
+}
+
+#exercise {
+    background-color: hsl(145, 58%, 55%);
+    background-image: url(../img/icon-exercise.svg);
+}
+
+#social {
+    background-color: hsl(264, 64%, 52%);
+    background-image: url(../img/icon-social.svg);
+}
+
+#selfCare {
+    background-color: hsl(43, 84%, 65%);
+    background-image: url(../img/icon-self-care.svg);
+}
+
+.appointmentData {
+    height: 100px;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+}
