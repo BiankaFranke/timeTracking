@@ -64,7 +64,7 @@ h4 {
     background-color: hsl(235, 46%, 20%);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    padding: 30px 0px;
+    padding: 2rem;
 }
 
 #timeIntervall button {
@@ -74,11 +74,7 @@ h4 {
     padding-left: 2rem;
 }
 
-#timeIntervall button:nth-of-type(2) {
-    color: white;
-}
-
-#timeIntervall button:focus {
+#timeIntervall button:hover {
     color: white;
 }
 
@@ -168,11 +164,19 @@ h4 {
     border-radius: 10px;
 }
 
-@media only screen and (min-width: 375px) {
+.appointmentData:hover, .appointmentData:hover .appointmentHeader {
+    background-color: hsl(235, 45%, 61%);
+}
+
+.active {
+    color: aqua;
+}
+
+@media only screen and (min-width: 376px) {
     main {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 3vw;
+        gap: 1.5vw;
     }
 
     #userInformation {
@@ -184,10 +188,21 @@ h4 {
     #timeIntervall, .data {
         flex-direction: column;
         align-items: flex-start;
-        gap: 0.5rem;
     }
 
     h2 {
         font-size: 2.5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .appointmentData {
+        height: 11.5rem;
+    }
+  }
+
+  @media only screen and (min-width: 376px) {
+    #timeIntervall button {
+        margin-top: 1rem;
     }
   }
