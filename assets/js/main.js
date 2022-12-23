@@ -1,12 +1,21 @@
-console.log('JS check')
-
 // Declaration
 const daily = document.querySelector("#daily")
 const weekly = document.querySelector("#weekly")
 const monthly = document.querySelector("#monthly")
+const workTime = document.querySelector("#workTime")
+const workTimePre = document.querySelector("#workTimePre")
+const playTime = document.querySelector("#playTime")
+const playTimePre = document.querySelector("#playTimePre")
+const studyTime = document.querySelector("#studyTime")
+const studyTimePre = document.querySelector("#studyTimePre")
+const exTime = document.querySelector("#exTime")
+const exTimePre = document.querySelector("#exTimePre")
+const socialTime = document.querySelector("#socialTime")
+const socialTimePre = document.querySelector("#socialTimePre")
+const selfCareTime = document.querySelector("#selfTime")
+const selfCareTimePre = document.querySelector("#selfTimePre")
 
 // Data
-
 const timeframe = [
     {
       "title": "Work",
@@ -113,24 +122,56 @@ const timeframe = [
   ]
 
 // Eventlistener
-
 daily.addEventListener('click', () => {
-    console.log('test')
-    daily.classList.add('active')
-    weekly.classList.remove('active')
-    monthly.classList.remove('active')
+    daily.classList.add('.active');
+    weekly.classList.remove('.active');
+    monthly.classList.remove('.active');
+    workTime.textContent = timeframe[0].timeframes.daily.current + 'hrs';
+    workTimePre.textContent = 'Last day - ' + timeframe[0].timeframes.daily.previous + 'hrs';
+    playTime.textContent = timeframe[1].timeframes.daily.current + 'hrs';
+    playTimePre.textContent = 'Last day - ' + timeframe[1].timeframes.daily.previous + 'hrs';
+    studyTime.textContent = timeframe[2].timeframes.daily.current + 'hrs';
+    studyTimePre.textContent = 'Last day - ' + timeframe[2].timeframes.daily.previous + 'hrs';
+    exTime.textContent = timeframe[3].timeframes.daily.current + 'hrs';
+    exTimePre.textContent = 'Last day - ' + timeframe[3].timeframes.daily.previous + 'hrs';
+    socialTime.textContent = timeframe[4].timeframes.daily.current + 'hrs';
+    socialTimePre.textContent = 'Last day - ' + timeframe[4].timeframes.daily.previous + 'hrs';
+    selfCareTime.textContent = timeframe[5].timeframes.daily.current + 'hrs';
+    selfCareTimePre.textContent = 'Last day - ' + timeframe[5].timeframes.daily.previous + 'hrs';
 })
 
 weekly.addEventListener('click', () => {
-    console.log('test2')
-    weekly.classList.add('active')
-    daily.classList.remove('active')
-    monthly.classList.remove('active')
+    weekly.classList.add('active');
+    daily.classList.remove('active');
+    monthly.classList.remove('active');
+    workTime.textContent = timeframe[0].timeframes.weekly.current + 'hrs';
+    workTimePre.textContent = 'Last Week - ' + timeframe[0].timeframes.weekly.previous + 'hrs';
+    playTime.textContent = timeframe[1].timeframes.weekly.current + 'hrs';
+    playTimePre.textContent = 'Last Week - ' + timeframe[1].timeframes.weekly.previous + 'hrs';
+    studyTime.textContent = timeframe[2].timeframes.weekly.current + 'hrs';
+    studyTimePre.textContent = 'Last Week - ' + timeframe[2].timeframes.weekly.previous + 'hrs';
+    exTime.textContent = timeframe[3].timeframes.weekly.current + 'hrs';
+    exTimePre.textContent = 'Last Week - ' + timeframe[3].timeframes.weekly.previous + 'hrs';
+    socialTime.textContent = timeframe[4].timeframes.weekly.current + 'hrs';
+    socialTimePre.textContent = 'Last Week - ' + timeframe[4].timeframes.weekly.previous + 'hrs';
+    selfCareTime.textContent = timeframe[5].timeframes.weekly.current + 'hrs';
+    selfCareTimePre.textContent = 'Last Week - ' + timeframe[5].timeframes.weekly.previous + 'hrs';
 })
 
 monthly.addEventListener('click', () => {
-    console.log('test3')
-    monthly.classList.add('active')
-    weekly.classList.remove('active')
-    daily.classList.remove('active')
+    monthly.classList.add("active");
+    weekly.classList.remove('active');
+    daily.classList.remove('active');
+    workTime.textContent = timeframe[0].timeframes.monthly.current + 'hrs';
+    workTimePre.textContent = 'Last month - ' + timeframe[0].timeframes.monthly.previous + 'hrs';
+    playTime.textContent = timeframe[1].timeframes.monthly.current + 'hrs';
+    playTimePre.textContent = 'Last month - ' + timeframe[1].timeframes.monthly.previous + 'hrs';
+    studyTime.textContent = timeframe[2].timeframes.monthly.current + 'hrs';
+    studyTimePre.textContent = 'Last month - ' + timeframe[2].timeframes.monthly.previous + 'hrs';
+    exTime.textContent = timeframe[3].timeframes.monthly.current + 'hrs';
+    exTimePre.textContent = 'Last month - ' + timeframe[3].timeframes.monthly.previous + 'hrs';
+    socialTime.textContent = timeframe[4].timeframes.monthly.current + 'hrs';
+    socialTimePre.textContent = 'Last month - ' + timeframe[4].timeframes.monthly.previous + 'hrs';
+    selfCareTime.textContent = timeframe[5].timeframes.monthly.current + 'hrs';
+    selfCareTimePre.textContent = 'Last month - ' + timeframe[5].timeframes.monthly.previous + 'hrs';
 })

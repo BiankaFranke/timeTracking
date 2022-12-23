@@ -97,7 +97,7 @@ h4 {
     padding: 0px 20px;
 }
 
-.data p, .data span {
+.data p {
     color: hsl(236, 100%, 87%);
 }
 
@@ -169,7 +169,7 @@ h4 {
 }
 
 .active {
-    color: aqua;
+    color: palevioletred;
 }
 
 @media only screen and (min-width: 376px) {
@@ -183,6 +183,10 @@ h4 {
         display: grid;
         grid-row-start: 1;
         grid-row-end: 4;
+    }
+
+    #timeIntervall button {
+        font-size: 1.2rem;
     }
 
     #timeIntervall, .data {
